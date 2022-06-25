@@ -1,0 +1,341 @@
+
+body{
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+}
+
+
+img{
+    float: left;
+    margin-left: 20px;
+    height: auto;
+}
+
+.nav-link{
+  margin-left: 80px;
+}
+
+ .text {
+    color: #f2f2f2;
+    font-size: 50px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 120px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 5px 5px 5px slateblue;
+  }
+
+  #about{
+    width: 100%;
+    height: 100vh;
+
+  }
+
+  .info{
+    margin-top: 500px;
+  }
+
+  .info p{
+    margin-left: 180px;
+    color: black;
+    float: left;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  #knowmore{
+    transform:translate(0px,-80px);
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    margin-left: 180px;
+  }
+
+  #knowmore:hover{
+    color: gold;
+    transition: ease-in .5s;
+  }
+
+  iframe{
+    float: left;
+    margin-left: 80px;
+  }
+
+  #program-head{
+    text-align: center;
+    color: gold;
+    text-shadow: 4px 4px 4px black;
+  }
+
+ tbody td{
+  text-align: center;
+  transform: translate(15px , 0px);
+  padding: 30px;
+  flex-direction: column;
+  
+ } 
+
+ .card{
+  width: 200px;
+  height: 200px;
+ }
+
+ .card-img-top{
+  width: 200px;
+  height: 120px;
+ }
+
+ .card-title{
+  text-align: center;
+ }
+
+
+ .services{
+  background-color: gold;
+  color: black;
+  border-radius: 50px;
+  flex-direction:column-reverse;
+ }
+
+ #reason{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+ }
+
+ .head-reason{
+  color: gold;
+  padding: 50px;
+  text-align: center;
+ }
+
+ .head-reason:hover{
+  color:crimson;
+ }
+
+ #info-reason{
+  text-align: center;
+  color: white;
+  
+ }
+
+ #partners{
+  width: 100%;
+  height: 40vh;
+ }
+
+ #part-head{
+  text-align: center;
+  padding: 30px;
+  color: gold;
+ }
+
+ #part-img{
+  margin-left: 600px;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-name: example;
+ }
+
+ @keyframes example{
+  from{margin-left: 200px;}
+  to{margin-left: 900px;}
+ }
+
+ .appeal{
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  padding: 50px;
+  padding-top: 20px;
+  float: left;
+ }
+
+ #appeal-btn{
+  background-color: orange;
+  color: white;
+  border-radius: 15px;
+ }
+
+ #footer{
+  width: 100%;
+  height: 70vh;
+  background-color: rgb(252, 220, 43);
+  padding: 50px;
+  flex-direction: column;
+ }
+
+ .footer-head:hover{
+    color: white;
+    font-size: x-large;
+    transform: translateY(10px);
+ }
+
+ .sub-footer-options:hover{
+  transform: translateY(-10px);
+  transition: transform 1s;
+ }
+
+ .hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media(max-width:1190px){
+  .mySlides img{
+    height: auto;
+    max-width: 1150px;
+  }
+
+  .text{
+    font-size: 40px;
+  }
+
+  .info h1{
+    text-align: center;
+  }
+
+  iframe{
+    margin-left: 200px;
+  }
+
+  #knowmore{
+    transform:translate(-120px,-80px);
+  }
+  #program-head{
+    float: left;
+    margin-top: 50px;
+   position: absolute;
+   padding: 20px;
+   margin-left: 500px;
+  }
+
+  .services{
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .head-reason{
+    font-size: 30px;
+  }
+
+  #info-reason{
+    font-size: medium;
+  }
+
+  #reason-img{
+    width: 700px;
+  }
+}
+
+@media(max-width:600px){
+  .mySlides img{
+    height: auto;
+    max-width: 500px;
+  }
+
+  .text{
+    font-size: 30px;
+  }
+
+  .info p{
+    margin-left: 0%;
+    text-align: center;
+  }
+
+  iframe{
+    width: auto;
+    height: auto;
+    margin: 0%;
+    margin-left: 200px;
+  }
+
+  #program-head{
+    display: none;
+  }
+
+  .pro-img{
+    width: auto;
+    height: auto;
+    display: none
+  }
+
+  .services{
+    width: auto;
+    height: auto;
+    display:flex;
+    padding: 5px;
+  }
+
+  #program-head{
+    margin: 0%;
+    position: relative;
+  }
+
+  #reason-img{
+    display: none;
+  }
+
+  #part-img{
+    animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-name: example;
+  }
+
+  @keyframes example{
+    from{margin-left: 50px;}
+    to{margin-left: 150px;}
+  }
+
+  .appeal{
+    font-size: small;
+  }
+
+  #footer{
+    height: 1200px;
+  }
+
+  .card{
+    width: 200px;
+    display: flex;
+    float: left;
+  }
+
+  .card-title{
+    font-size: small;
+  }
+
+  .card-img-top{
+    width: 50px;
+    height: 50px;
+  }
+
+
+}
+
